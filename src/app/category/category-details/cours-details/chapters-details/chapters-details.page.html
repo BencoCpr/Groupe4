@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/category/category-detail/chapters-details"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">{{selectedChapters.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p>{{selectedChapters.content}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

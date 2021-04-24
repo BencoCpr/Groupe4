@@ -1,3 +1,38 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-app color="white">
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar color="warning">
+        <ion-title class="ion-text-center">
+          Tech Course G4
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/stats">
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label>Sats</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+  <ion-tabs>
+    <ion-tab-bar color="warning">
+      <ion-tab-button tab="category">
+        <ion-icon name="apps"></ion-icon>
+        <ion-label>Categories</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="note">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Note</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+
+  </ion-tabs>
 </ion-app>
+
